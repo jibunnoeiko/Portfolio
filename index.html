@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+	<title>Vladislav Henkel | Portfolio</title>
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar">
+            <a href="#" class="nav-logo"><img class="logo" src="images/Logo.svg" alt="Logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+
+                    <a href="#1" class="nav-link">WHO AM I?</a>
+                </li>
+                <li class="nav-item">
+
+                    <a href="#2" class="nav-link">SKILLS</a>
+                </li>
+                <li class="nav-item">
+
+                    <a href="#3" class="nav-link">RESUME</a>
+                </li>
+                <li class="nav-item">
+
+                    <a href="#4" class="nav-link">PROJECTS</a>
+                </li>
+				<li class="nav-item">
+
+                    <a href="#5" id="hit" class="nav-link">HIT ME UP!</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <img src="images/burgerButton.svg" alt="">
+            </div>
+        </nav>
+	</header>
+	<main class="main">
+		<section>
+
+			<div id="1" class="banner">
+				<h1 class="whoami">WHO AM I?</h1>
+				<h2 class="aboutme">
+					I’m Beginner Software Engineer and Enthusiast Designer UI/UX. Inspired by books and coffee. 
+					I am passionate about computer science, algorithms, design and videogames.
+					Hit me up and let’s work together!
+				</h2>
+				<h2 class="contacts">Contacts</h2>
+				<a href="https://linktr.ee/vladislavcodes"><h2 class="linktree">https://linktr.ee/vladislavcodes</h2></a>
+				<li class="socials">
+					<a class="sociallinks" href="#">
+						<img src="images/github.svg" alt="github"></img>
+					</a>
+					<a class="sociallinks" href="#">
+						<img src="images/facebook.svg" alt="facebook"></img>
+					</a>
+					<a class="sociallinks" href="#">
+						<img src="images/instagram.svg" alt="instagram"></img>
+					</a>
+					<a class="sociallinks" href="#">
+						<img src="images/twitter.svg" alt="twitter"></img>
+					</a>
+				</li>
+				<div class="iframe"><iframe src="https://www.youtube.com/embed/eTD0WWFIDAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe></div>
+			</div>
+		</section>
+		<section>
+			<div class="tilesSkills">
+				<h1 class="h1">LET’S WORK TOGETHER!</h1>
+
+				<div class="wrapper">
+					<div class="card">
+					  <div id="2" class="front"><img src="images/skills1.png"></div>
+					  <div class="back"><span><a href="#4"><img src="images/skillsBack.png"></a></span></div>
+					</div>
+				  </div>
+
+				  <div class="wrapper">
+					<div class="card">
+					  <div id="3" class="front"><img src="images/resume1.png"></div>
+					  <div class="back"><span><a  href="resume/resume.pdf" download><img src="images/resumeBack.png"></a></span></div>
+					</div>
+				  </div>
+		</section>
+		<section>
+			<h1 id="4" class="h1">PROJECTS</h1>
+
+				<div id="project" class="banner">
+					<div class="prjPhoto">
+						<img src="images/prjPhoto.png" alt="prjPhoto">
+					</div>
+					<div>
+						<h1 class="portfolio">PORTFOLIO</h1>
+					</div>
+					<div>
+						<h2 class="aboutPrj">This is my first project. You can check it out and 
+						try it right now, because you're right here now!
+						Enjoy! :D</h2>
+					</div>
+					<div>
+						<h2 class="srcLink">Src link:<a class="prjLink" href="http://127.0.0.1:5500/index.html">You're right here now!</a></h2>
+						<h2 class="srcLink">Contacts:<a class="prjLink" href="https://linktr.ee/vladislavcodes">https://linktr.ee/vladislavcodes</a></h2>
+						<h2 class="srcLink">Tech:<a class="tech" href="https://www.codewall.co.uk/html-css-and-javascript-explained-for-beginners/">HTML/CSS/JavaScript</a></h2>
+					</div>
+				</div>
+
+		</section>
+		<section>
+				<div class="form">
+					<form id="form" class="form__body">
+						<h1 id="5" class="form__title">HIT ME UP!</h1>
+						<div class="form__item">
+							<input id="formName" type="text" name="name" placeholder="Name*" class="form__input _req">
+						</div>
+						<div class="form__item">
+							<input id="formEmail" type="text" name="email" placeholder="E-mail*" class="form__input _req _email">
+						</div>
+						<div class="form__item">
+							<textarea id="formMessage" name="message" placeholder="Type here..." class="form__input"></textarea>
+						</div>
+						<div class="form__item">
+							<div class="checkbox">
+								<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+								<label for="formAgreement" class="checkbox__label"><span>I hereby consent to the processing of the my personal data*</span></label>
+							</div>
+						</div>
+						<button type="submit" class="form__button">SUBMIT</button>
+					</form>
+				</div>
+		</section>
+	</main>
+	<section>
+		<footer class="footer">
+			<p class="foot-logo"><img src="images/Logo.svg" alt="logo"></p>
+			<h2 class="foot__info">Copyright © 2021 | Vladislav Henkel</h2>
+		</footer>
+	</section>
+</body>
+<script src="scripts/script.js"></script>
+</html>

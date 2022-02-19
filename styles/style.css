@@ -1,0 +1,586 @@
+/*Nav-Bar*/
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121B28;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 25px;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #263E56;
+}
+
+
+.nav-link:hover {
+    color: #7D5AD3;
+    transition: color 0.5s ease 0s;
+}
+
+.nav-logo {
+    margin-top: 10px;
+    margin-left: 240px;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 9.3rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        text-align: center;
+        transition: 0;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .nav-menu.active {
+        position: absolute;
+        right: 0;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    #hit {
+        padding: 10px 15px 10px 15px;
+        border: 2px solid #263E56;
+        border-radius: 5px;
+    }
+
+    #hit:active {
+        background: rgba(46, 45, 83, 0.5);
+
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-logo {
+        margin-left: 0;
+    }
+
+}
+
+
+/* Main content */
+
+/* WHO AM I */
+.banner {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 364px;
+    height: 630px;
+    background: #e9e8fd;
+    border-radius: 30px;
+}
+
+.whoami {
+    padding-top: 60px;
+    padding-left: 30px;
+    font-family: Rubik;
+    font-style: normal;
+    /* font-weight: bold; */
+    font-size: 40px;
+    line-height: 20px;
+    /* identical to box height, or 50% */
+
+
+    color: #263E56;
+}
+
+.aboutme {
+    padding-top: 30px;
+    padding-left: 27px;
+    padding-right: 27px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 154% */
+
+    color: #263E56;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+
+    color: #263E56;
+
+}
+
+.linktree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 70px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #FFFFFF;
+
+    width: 223px;
+    height: 37px;
+    background: #263E56;
+    border-radius: 10px;
+}
+
+.linktree:hover {
+    background-color: #335270;
+    transition: background-color 0.5s ease 0s;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sociallinks {
+    margin-top: 10px;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+
+iframe {
+    width: 310px;
+    height: 196px;
+    border-radius: 15px;
+}
+
+.iframe {
+    margin: 0 auto;
+    width: 310px;
+    height: 196px;
+    margin-top: 50px;
+}
+
+
+/* LET’S WORK TOGETHER! */
+.h1 {
+    margin-top: 190px;
+    display: flex;
+    justify-content: center;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 20px;
+    /* identical to box height, or 59% */
+
+
+    color: #FFFFFF;
+
+}
+
+.wrapper {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 286px;
+    height: 298px;
+    left: 0;
+    top: 0;
+
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.front,
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.front img {
+    height: auto;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
+}
+
+.prjPhoto {
+    padding-top: 27px;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutPrj {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    padding-left: 20px;
+    padding-right: 32px;
+    padding-top: 37px;
+
+
+    color: #263E56;
+
+}
+
+.portfolio {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 0px;
+    /* identical to box height, or 0% */
+
+    display: flex;
+    justify-content: center;
+    padding-top: 46px;
+
+    color: #263E56;
+}
+
+.srcLink {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 0px;
+    /* identical to box height, or 0% */
+
+    padding-left: 20px;
+    padding-top: 29px;
+
+
+    color: #263E56;
+
+}
+
+.prjLink {
+    margin-left: 10px;
+    padding: 10px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 30px;
+
+    color: #FFFFFF;
+
+    width: 223px;
+    height: 37px;
+    background: #263E56;
+    border-radius: 10px;
+}
+
+.prjLink:hover {
+    background-color: #335270;
+    transition: background-color 0.5s ease 0s;
+}
+
+.tech {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 0px;
+    /* identical to box height, or 0% */
+
+    margin-left: 10px;
+
+
+    color: #0066FF;
+
+}
+
+
+
+/* Форма для фидбека */
+
+
+
+.form {
+    background-color: #2E2D53;
+    margin: 0 auto;
+    width: 364px;
+    height: 630px;
+    margin-top: 80px;
+    border-radius: 30px;
+    border: none;
+}
+
+.form * {
+    outline: none;
+}
+
+.form__body {
+    position: relative;
+}
+
+.form__body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.185) url(../images/loading.gif) center / 70px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.form__body._sending::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form__title {
+    padding-top: 70px;
+    margin-top: 190px;
+    margin-bottom: 57px;
+    display: flex;
+    justify-content: center;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 20px;
+    /* identical to box height, or 59% */
+    color: #FFFFFF;
+}
+
+.form__item {
+    padding: 0px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    color: #617E9B;
+}
+
+.form__input {
+    border: none;
+    color: #FFFFFF;
+    height: 50px;
+    width: 286px;
+    background: rgba(0, 0, 7, 0.2);
+    border-radius: 15px;
+    padding: 0 15px;
+    transition: all 0.5s ease 0s;
+}
+
+.form__input::placeholder {
+    color: #617E9B;
+    font-size: 15px;
+}
+
+.form__input:focus {
+    box-shadow: 0 0 15px #617E9B;
+}
+
+textarea.form__input {
+    min-height: 130px;
+    resize: none;
+    max-height: 0px;
+    padding: 15px;
+}
+
+.form__input._error {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.801);
+}
+
+/* .checkbox {} */
+
+.checkbox._error .checkbox__label::before {
+    transition: box-shadow 0.5s ease 0s;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.801);
+}
+
+.checkbox__input {
+    display: none;
+}
+
+.checkbox__input:checked+.checkbox__label::after {
+    transform: scale(1);
+}
+
+.checkbox__label {
+    margin: 0 20px 25px 40px;
+    font-size: 16px;
+    font-weight: lighter;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox__label::before {
+    content: "";
+    align-self: flex-start;
+    flex: 0 0 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 0px 10px 0px 0px;
+}
+
+.checkbox__label::after {
+    transition: transform 0.5s ease 0s;
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: rgba(38, 62, 86, 0.7);
+    border-radius: 4px;
+    transform: scale(0);
+}
+
+.form__button {
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 4px 0 #121B28;
+    background: rgba(38, 62, 86, 0.7);
+    border-radius: 10px;
+    width: 286px;
+    height: 41px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: background-color 0.5s ease 0s;
+}
+
+.form__button:hover {
+    background-color: #335270;
+}
+
+.form__button:active {
+    top: 3px;
+    box-shadow: 0 2px 0 #121B28;
+}
+
+.footer {
+    margin-top: 214px;
+    background-color: #fff;
+}
+
+.foot-logo {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.foot-logo,
+.foot__info {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #263E56;
+}
